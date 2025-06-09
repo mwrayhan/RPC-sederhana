@@ -54,63 +54,6 @@ Melalui proyek ini, Anda akan belajar tentang:
 
 ## Struktur Proyek
 
-Tentu, dengan kode Python XML-RPC yang Anda berikan, saya akan membuatkan isi file README.md yang lengkap dan sesuai. Ini akan menjelaskan proyek Anda dengan baik kepada siapa pun yang melihat repositori.
-
-Markdown
-
-# RPC Sederhana: Sistem Inventori (Tambah Item) dengan XML-RPC Python
-
-Proyek ini mendemonstrasikan konsep dasar Remote Procedure Call (RPC) menggunakan implementasi XML-RPC standar di Python. Fokus utamanya adalah pengelolaan inventori, di mana sebuah **server** bertindak sebagai "Gudang Inventori" dan sebuah **klien** dapat memanggil fungsi untuk menambahkan item dari jarak jauh.
-
-Tujuan dari proyek ini adalah untuk menunjukkan bagaimana dua program Python yang terpisah dapat berkomunikasi melalui jaringan lokal, memungkinkan klien untuk memanggil fungsi yang didefinisikan di server seolah-olah fungsi tersebut adalah bagian dari kode lokal klien.
-
----
-
-## Daftar Isi
-
-* [Tentang Proyek](#tentang-proyek)
-* [Fitur Utama](#fitur-utama)
-* [Teknologi yang Digunakan](#teknologi-yang-digunakan)
-* [Struktur Proyek](#struktur-proyek)
-* [Cara Menjalankan](#cara-menjalankan)
-* [Lisensi](#lisensi)
-* [Kontributor](#kontributor)
-
----
-
-## Tentang Proyek
-
-Sistem ini mensimulasikan skenario di mana sebuah aplikasi klien (misalnya, terminal penerimaan barang) perlu memperbarui inventori pusat yang dikelola oleh aplikasi server.
-
-**Fungsi yang disediakan oleh Layanan (Server):**
-* `add_item(name, quantity)`: Fungsi ini menerima nama item (`name`) dan jumlahnya (`quantity`). Jika `quantity` positif, item akan ditambahkan ke inventori dan total stok diperbarui. Jika `quantity` negatif, server akan mengembalikan pesan error. Server akan mengkonfirmasi apakah penambahan berhasil dan berapa total stok item tersebut.
-
-Melalui proyek ini, Anda akan belajar tentang:
-* Inisiasi server XML-RPC dan klien.
-* Pendaftaran metode di server agar dapat diakses dari jarak jauh.
-* Membangun koneksi jaringan antara klien dan server.
-* Melakukan panggilan fungsi jarak jauh (RPC call) dari klien.
-* Menerima respons (termasuk *error handling* sederhana) dari server.
-
----
-
-## Fitur Utama
-
-* **Panggilan Fungsi Jarak Jauh (RPC):** Klien dapat memanggil metode `add_item` yang berjalan di server.
-* **Manajemen Inventori Dasar:** Server dapat menambah dan melacak jumlah stok item yang berbeda.
-* **Validasi Input:** Server memiliki logika dasar untuk menangani input jumlah negatif.
-* **Komunikasi Jaringan:** Menggunakan protokol XML-RPC melalui TCP/IP.
-* **Sederhana & Mudah Dipahami:** Implementasi minimalis untuk memahami konsep RPC.
-
----
-
-## Teknologi yang Digunakan
-
-* **Bahasa Pemrograman:** Python 3.x
-* **Mekanisme Komunikasi:** Python `xmlrpc.server` (untuk server) dan `xmlrpc.client` (untuk klien)
-* **Penyimpanan Inventori (Sisi Server):** Python Dictionary (disimpan dalam memori)
-
-## Struktur Proyek
 
 ## Cara Menjalankan
 
@@ -157,6 +100,6 @@ Proyek ini dilisensikan di bawah [Lisensi MIT](https://opensource.org/licenses/M
 
 ## Kontributor
 
-* [Raihanul Mawa] - [[Opsional: Profil GitHub Anda atau Link Lain](https://github.com/mwrayhan)]
+* [Raihanul Mawa] - [[Profil GitHub](https://github.com/mwrayhan)]
 
 ---
