@@ -110,14 +110,7 @@ Melalui proyek ini, Anda akan belajar tentang:
 * **Mekanisme Komunikasi:** Python `xmlrpc.server` (untuk server) dan `xmlrpc.client` (untuk klien)
 * **Penyimpanan Inventori (Sisi Server):** Python Dictionary (disimpan dalam memori)
 
----
-
 ## Struktur Proyek
-
-rpc-inventori-sederhana/
-├── rpc_add_item_server.py    # Kode utama server
-├── rpc_add_item_client.py    # Kode utama klien
-└── README.md
 
 ## Cara Menjalankan
 
